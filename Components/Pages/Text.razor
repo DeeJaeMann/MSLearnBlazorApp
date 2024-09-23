@@ -1,0 +1,14 @@
+﻿@page "/text"
+@rendermode InteractiveServer
+
+<PageTitle>Text</PageTitle>
+
+<h3>Text</h3>
+<p>You entered: @text</p>
+
+<input @bind="text" />
+<button @onclick="() => text = string.Empty">Clear</button>
+
+@code {
+    string text = "";
+}
