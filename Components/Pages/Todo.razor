@@ -1,0 +1,15 @@
+﻿@page "/todo"
+@rendermode InteractiveServer
+
+<h3>Todo</h3>
+
+<ul>
+    @foreach ( TodoItem todo in todos)
+    {
+        <li>@todo.Title</li>
+    }
+</ul>
+
+@code {
+    private List<TodoItem> todos = new();
+}
